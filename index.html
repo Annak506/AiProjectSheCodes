@@ -15,20 +15,25 @@
         </header>
 
     <main>
-        <form id="poem-generator-form">
-            <input 
-                type="text" 
-                placeholder = "Enter the topic of the poem"
-                autofocus
-                required
-                autocomplete="off"
-                class="instructions"
-                id="user-instructions">
-            </input>
-            <input type="submit" value="Submit" class="submitBtn"> </input>
-        </form>
-        <div class="poem" id="poem">
+        <div class="form-container">
+            <form id="poem-generator-form">
+                <input 
+                    type="text" 
+                    placeholder = "Enter the topic of a poem you'd like to generate."
+                    autofocus
+                    required
+                    autocomplete="off"
+                    class="instructions"
+                    id="user-instructions">
+                </input>
+                <input type="submit" value="Submit" class="submitBtn"> </input>
+            </form>
+            <div class="hint"> i.e. flower, love, Paris </div>
         </div>
+
+            <div class="poem hidden" id="poem">
+            </div>
+           
     </main>
 
     <footer>
