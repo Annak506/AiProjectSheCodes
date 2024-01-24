@@ -7,9 +7,10 @@
     <title>AI project Anna SheCodes</title>
 </head>
 <body>
-    <header>
-        <h1> AI Poem Generator </h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1> AI Poem Generator </h1>
+        </header>
 
     <main>
         <form>
@@ -18,11 +19,12 @@
                 placeholder = "Enter the topic of the poem"
                 autofocus
                 required
-                autocomplete="off">
+                autocomplete="off"
+                class="instructions">
             </input>
-            <input type="submit" placeholder="Submit"> </input>
+            <input type="submit" value="Submit" class="submitBtn"> </input>
         </form>
-        <div>
+        <div class="poem">
             Two roads diverged in a yellow wood,
             </br>
             And sorry I could not travel both
@@ -30,8 +32,12 @@
     </main>
 
     <footer>
-        <a href="https://github.com/Annak506/AiProjectSheCodes"> Link to Github </a>
+        This AI project was coded by Anna Bannenberg-Kleinloog and is open-sourced on
+        <a href="https://github.com/Annak506/AiProjectSheCodes" target="_blank"> Github </a> 
+        and hosted on
+        <a href="https://ai-project-shecodes-anna.netlify.app/" target="_blank"> Netlify </a>
     </footer>
+    </div>
 
     <script src="src/index.js"></script>
 </body>
